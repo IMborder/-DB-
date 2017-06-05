@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>USER</title>
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<script src="JS/all.js"></script>
+	<meta name=”viewport” content=”width=device-width, initial-scale=1.0″>
+</head>
+<body bgcolor="#F0F0F0">
+	<div class="wrap">
+		<div class="header">
+			<div class="title">
+				<a href="index.html"><h1>邊緣人團購網</h1></a>
+			</div>
+			<a href="user_index.html"><div class="hello" onmouseout="">XXX 你好</div></a>
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+		<!-- 註冊白框架 -->
+		<div class="idk_menu">
+			<div class="idk_title">使用者</div>
+			<ul>
+				<a href="user_index.html" style="text-decoration: none;"><div class="idk">修改會員資料</div></a>
+				<a href="record.html" style="text-decoration: none;"><li class="idk_1">訂單紀錄</li></a>
+				<a href="basket.html" style="text-decoration: none;"><li class="idk_1">購物車</li></a>
+				<a href="#" style="text-decoration: none;"><li class="idk_2" >主購開團資訊</li></a>
+			</ul>
+		</div>
+		<div class="clear"></div>
+		<div class="fix_box">
+			<p class="t1">會員資料修改</p>
+			
+			<form name="form1">
+				<hr>
+				<br>
+				姓名 &nbsp;
+				<input class="id" type="text" name="id">
+				<br><br>
+				性別&nbsp;
+				<input class="gender" type="radio" name="gender" value="female"><span class="FC">女</span>
+				<input class="gender" type="radio" name="gender" value="male"><span class="MC">男</span>
+				<input class="gender" type="radio" name="gender" value="other"><span class="OC">其他</span>
+				<br><br>
+				年齡 &nbsp;
+				<input class="age" type="text" style="ime-mode:disabled" onkeyup="return ValidateNumber(this,value)" > 歲
+				<br><br>
+				帳號
+				<br>
+				<input type="text" name="user">
+				<br><br>
+				密碼
+				<br>
+				<input type="password" name="pwd1">
+				<br><br>
+				確認密碼
+				<br>
+				<input type="password" name="pwd2" onchange="checkpwd()">
+				<div id="msg" style="color: red;font-size: 14px;transition: 0.3s linear all"></div>
+				<br>
+				Email
+				<br>
+				<input type="email" name="email">
+				<br><br>
+				電話
+				<br>
+				<input type="text" name="phone">
+				<br><br>
+				地址
+				<br>
+				<textarea class="address"></textarea>
+				<br><br>
+				
+				
+
+				<hr>
+				<div class="button">
+					<input class="enter" type="submit" name="enter" value="確認">
+					<input class="reset" type="reset" name="reset" value="取消">
+				</div>
+			</form>
+			<br><br>
+		</div>
+		<div class="clear"></div>
+		
+
+
+
+	</div>
+</body>
+</html>
